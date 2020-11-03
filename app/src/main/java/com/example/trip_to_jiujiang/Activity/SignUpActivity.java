@@ -16,6 +16,13 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(R.layout.sign_up_layout);
         imageView_backUp  = findViewById(R.id.signUp_backArrow);
         textView_signIn = findViewById(R.id.text_signIn);
+        textView_signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignUpActivity.this,SignInActivity.class);
+                startActivity(intent);
+            }
+        });
         imageView_backUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
