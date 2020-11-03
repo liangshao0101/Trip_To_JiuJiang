@@ -21,7 +21,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:textSize="25dp"
-                android:text="飞翔的猪"/>
+                android:text="放    空"/>
         <TextView
                 android:id="@+id/accountID"
                 android:layout_width="wrap_content"
@@ -43,36 +43,29 @@
                 android:text="设置"/>
     </RelativeLayout>
     <TextView
-            android:id="@+id/myPost"
+            android:id="@+id/myxunyangquan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_info_top_margin"
             android:layout_marginLeft="@dimen/activity_info_left_margin"
             android:clickable="true"
             android:textSize="24dp"
-            android:text="我的帖子"/>
+            android:text="我的浔阳圈"/>
     <TextView
-            android:id="@+id/myFoot"
+            android:id="@+id/xunyangquan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_info_top_margin"
             android:layout_marginLeft="@dimen/activity_info_left_margin"
             android:textSize="24dp"
-            android:text="我的足迹"
-    />
-    <TextView
-            android:id="@+id/changeAccount"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_info_top_margin"
-            android:layout_marginLeft="@dimen/activity_info_left_margin"
-            android:textSize="24dp"
-            android:text="更换账号"
+            android:clickable="true"
+            android:text="浔阳圈"
     />
     <TextView
             android:id="@+id/changePassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:layout_marginTop="@dimen/activity_info_top_margin"
             android:layout_marginLeft="@dimen/activity_info_left_margin"
             android:textSize="24dp"
@@ -82,6 +75,7 @@
             android:id="@+id/exitAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:layout_marginTop="@dimen/activity_info_top_margin"
             android:layout_marginLeft="@dimen/activity_info_left_margin"
             android:textSize="24dp"

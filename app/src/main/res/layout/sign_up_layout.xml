@@ -18,6 +18,7 @@
                 android:id="@+id/signUp_backArrow"
                 android:src="@drawable/back_arrow_image"
                 android:adjustViewBounds="true"
+                android:clickable="true"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp" />
