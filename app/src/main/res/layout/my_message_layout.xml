@@ -11,7 +11,7 @@
                 android:id="@+id/imageIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher_foreground"
+                android:src="@drawable/qq"
         />
         <TextView
                 android:id="@+id/name"
@@ -60,6 +60,16 @@
             android:textSize="24dp"
             android:clickable="true"
             android:text="浔阳圈"
+    />
+    <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/activity_info_top_margin"
+            android:layout_marginLeft="@dimen/activity_info_left_margin"
+            android:textSize="24dp"
+            android:text="我的订单"
     />
     <TextView
             android:id="@+id/changePassword"

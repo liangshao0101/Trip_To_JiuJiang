@@ -50,7 +50,7 @@
                 android:textColorHint="@color/colorEditViewHint"
                 android:textSize="15sp"
                 android:background="@color/colorEditView"
-                android:textCursorDrawable="@drawable/cursor_color"
+
                 android:gravity="center"
                 android:layout_width="300dp"
                 android:layout_height="45dp" />
@@ -62,7 +62,7 @@
                 android:textSize="15sp"
                 android:inputType="textPassword"
                 android:background="@color/colorEditView"
-                android:textCursorDrawable="@drawable/cursor_color"
+
                 android:gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_width="300dp"
@@ -73,7 +73,7 @@
                 android:text="登  录"
                 android:textSize="20sp"
                 android:textColor="#FFF"
-                android:background="@drawable/button_round_corner"
+
                 android:layout_marginTop="20dp"
                 android:layout_width="295dp"
                 android:layout_height="45dp" />

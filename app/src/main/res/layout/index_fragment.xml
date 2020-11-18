@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <!--搜索框 -->
+    <SearchView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:queryHint="酒店/景区/路线"
+                android:iconifiedByDefault="true"
+                android:id="@+id/searchciew">
+
+    </SearchView>
+    <!--轮播图-->
+    <com.bigkoo.convenientbanner.ConvenientBanner
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/convenientBanner"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="200dp"
+            app:canLoop="true"/>
+    <!--网格布局-->
+    <GridView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:numColumns="4"
+
+              android:id="@+id/gridview"/>
+    <!--滚动视图-->
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollview">
+
+    </ScrollView>
+</LinearLayout>
