@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
@@ -50,7 +49,6 @@
                 android:textColorHint="@color/colorEditViewHint"
                 android:textSize="15sp"
                 android:background="@color/colorEditView"
-
                 android:gravity="center"
                 android:layout_width="300dp"
                 android:layout_height="45dp" />
@@ -62,7 +60,6 @@
                 android:textSize="15sp"
                 android:inputType="textPassword"
                 android:background="@color/colorEditView"
-
                 android:gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_width="300dp"
@@ -72,8 +69,7 @@
                 android:id="@+id/button_signIn"
                 android:text="登  录"
                 android:textSize="20sp"
-                android:textColor="#FFF"
-
+                android:textColor="#3D9BE6"
                 android:layout_marginTop="20dp"
                 android:layout_width="295dp"
                 android:layout_height="45dp" />

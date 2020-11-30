@@ -1,8 +1,10 @@
 package com.example.trip_to_jiujiang.model;
 
+import cn.bmob.v3.BmobObject;
+
 import java.util.Date;
 
-public class Condition {
+public class Condition extends BmobObject {
     private String conditionId;   //用户动态号
     private Date conditionTime;   //动态发布时间
     private String conditionContext;  //动态内容

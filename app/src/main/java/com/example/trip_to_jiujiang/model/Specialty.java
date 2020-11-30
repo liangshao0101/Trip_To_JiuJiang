@@ -1,8 +1,10 @@
 package com.example.trip_to_jiujiang.model;
 
+import cn.bmob.v3.BmobObject;
+
 import java.util.Date;
 
-public class Specialty {
+public class Specialty extends BmobObject {
     private String specialtyId;  //特产订单号
     private String specialtySort;   //特产类别
     private String specialtyName;    //特产名称

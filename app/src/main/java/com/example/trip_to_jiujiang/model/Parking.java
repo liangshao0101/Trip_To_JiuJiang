@@ -1,9 +1,11 @@
 package com.example.trip_to_jiujiang.model;
 
 
+import cn.bmob.v3.BmobObject;
+
 import java.util.Date;
 
-public class Parking {
+public class Parking extends BmobObject {
     private String parkingId;  //停车订单号
     private String carNumber;   //车牌号
     private String parkingArea;   //停车地点

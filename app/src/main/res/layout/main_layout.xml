@@ -20,8 +20,7 @@
                 android:id="@+id/home_signIn"
                 android:text="登  录"
                 android:textSize="20sp"
-                android:textColor="#79688e"
-
+                android:textColor="#3EA8F6"
                 android:layout_marginTop="20dp"
                 android:layout_width="295dp"
                 android:layout_height="45dp" />
@@ -30,8 +29,7 @@
                 android:id="@+id/home_signUp"
                 android:text="注  册"
                 android:textSize="20sp"
-                android:textColor="#79688e"
-
+                android:textColor="#3EA8F6"
                 android:layout_marginTop="20dp"
                 android:layout_width="295dp"
                 android:layout_height="45dp" />

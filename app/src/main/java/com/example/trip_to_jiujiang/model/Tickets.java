@@ -1,8 +1,10 @@
 package com.example.trip_to_jiujiang.model;
 
+import cn.bmob.v3.BmobObject;
+
 import java.util.Date;
 
-public class Tickets {
+public class Tickets extends BmobObject {
     private String ticketsId;      //门票订单号
     private String ticketsSort;     //门票类别
     private String ticketsArea;    //门票所属景区

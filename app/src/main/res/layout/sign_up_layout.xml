@@ -48,7 +48,6 @@
                 android:textColorHint="@color/colorEditViewHint"
                 android:textSize="15sp"
                 android:background="@color/colorEditView"
-
                 android:gravity="center"
                 android:layout_width="300dp"
                 android:layout_height="45dp" />
@@ -60,20 +59,18 @@
                 android:textSize="15sp"
                 android:inputType="textPassword"
                 android:background="@color/colorEditView"
-
                 android:gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_width="300dp"
                 android:layout_height="45dp" />
 
         <EditText
-                android:id="@+id/signUp_verifyPassword"
-                android:hint="重复密码"
+                android:id="@+id/signUp_nickname"
+                android:hint="昵称"
                 android:textColorHint="@color/colorEditViewHint"
                 android:textSize="15sp"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:background="@color/colorEditView"
-
                 android:gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_width="300dp"
@@ -83,8 +80,7 @@
                 android:id="@+id/button_signUp"
                 android:text="注  册"
                 android:textSize="20sp"
-                android:textColor="#FFF"
-
+                android:textColor="#238DE1"
                 android:layout_marginTop="20dp"
                 android:layout_width="295dp"
                 android:layout_height="45dp" />

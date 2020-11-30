@@ -1,8 +1,10 @@
 package com.example.trip_to_jiujiang.model;
 
+import cn.bmob.v3.BmobObject;
+
 import java.util.Date;
 
-public class Comment {
+public class Comment extends BmobObject {
     private String commentId;   //用户评论号
     private Date commentTime;   //用户评论时间
     private String commentContext;   //用户评论内容

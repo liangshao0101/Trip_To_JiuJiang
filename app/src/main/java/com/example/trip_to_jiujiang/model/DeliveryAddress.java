@@ -1,8 +1,10 @@
 package com.example.trip_to_jiujiang.model;
 
+import cn.bmob.v3.BmobObject;
+
 import java.util.Date;
 
-public class DeliveryAddress {
+public class DeliveryAddress extends BmobObject {
     private String userName;   //姓名
     private String userPhone;   //电话号码
     private String userProvince;   //省份
