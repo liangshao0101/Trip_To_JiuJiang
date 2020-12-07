@@ -19,7 +19,7 @@ public class MyMessageActivity extends AppCompatActivity {
     private TextView textView_exit;                //退出
     protected void onCreate(Bundle bundle){
         super.onCreate(bundle);
-        setContentView(R.layout.my_message_layout);
+        setContentView(R.layout.mymessage_fragment);
         initView();   //加载layout组件
         button_setting.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -32,11 +32,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-//    sourceSets{
-//        main{
-//            jniLibs.srcDirs = ['libs']
-//        }
-//    }
+    sourceSets{
+        main{
+            jniLibs.srcDirs = ['libs']
+        }
+    }
 }
 
 dependencies {
@@ -48,8 +48,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.bigkoo:convenientbanner:2.1.5'
     implementation 'androidx.recyclerview:recyclerview:1.0.0+'
-    compile files('libs/mysql-connector-java-8.0.19.jar')    //添加Mysql数据库的依赖
-    compile files('libs/AMap3DMap_7.7.0_AMapNavi_7.7.0_AMapSearch_7.7.0_20201102.jar')   //添加高德地图的依赖
+    compile files('libs/AMap3DMap_7.7.0_AMapNavi_7.7.1_AMapSearch_7.7.0_20201113.jar')   //添加高德地图的依赖
+    compile files('libs/AMap_Location_V5.2.0_20200915.jar')
     //Bmob依赖
     implementation 'cn.bmob.android:bmob-sdk:3.7.8'
     implementation "io.reactivex.rxjava2:rxjava:2.2.8"
@@ -59,5 +59,8 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
 
     implementation 'com.android.support:multidex:1.0.3'
+
+    api "android.arch.lifecycle:extensions:1.1.1"
+    compile 'com.squareup.picasso:picasso:2.5.2'//引入picasso
 
 }

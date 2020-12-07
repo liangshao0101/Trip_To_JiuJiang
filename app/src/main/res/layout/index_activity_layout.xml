@@ -1,50 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
-                android:layout_marginTop="16dp"
                 android:layout_height="match_parent">
-   <RelativeLayout android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:id="@+id/container"
-                   >
 
-   </RelativeLayout>
-    <LinearLayout
+    <RadioGroup
+            android:id="@+id/rd_group"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="75dp"
             android:layout_alignParentBottom="true"
+            android:background="#ffffff"
             android:orientation="horizontal">
-    <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:id="@+id/main"
-            android:layout_weight="1"
-            android:text="首页"
-            />
-    <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:id="@+id/trip"
-            android:layout_weight="1"
-            android:text="语音导览"
-           />
-    <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:id="@+id/help"
-            android:layout_weight="1"
-            android:text="求助"
-           />
-    <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:id="@+id/mysetting"
-            android:layout_weight="1"
-            android:text="我的"
-            />
+        <RadioButton
+                android:id="@+id/rb_index"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/index_picture"
+                android:text="首页"/>
 
-    </LinearLayout>
+        <RadioButton
+                android:id="@+id/rb_yunyin"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/yuyindaolan_picture"
+                android:text="语音导览"/>
+        <RadioButton
+                android:id="@+id/rb_help"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/help_picture"
+                android:text="求助"/>
+
+        <RadioButton
+                android:id="@+id/rb_my"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/my_picture"
+                android:text="我的"/>
+    </RadioGroup>
+
+    <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rd_group"
+           >
+    </FrameLayout>
 </RelativeLayout>

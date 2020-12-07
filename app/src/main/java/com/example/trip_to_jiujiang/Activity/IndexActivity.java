@@ -1,78 +1,105 @@
 package com.example.trip_to_jiujiang.Activity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.RelativeLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.example.trip_to_jiujiang.Fragment.HelpFragment;
 import com.example.trip_to_jiujiang.Fragment.IndexFragment;
-import com.example.trip_to_jiujiang.Fragment.MySettingFragment;
-import com.example.trip_to_jiujiang.Fragment.YuYinViewFragment;
+import com.example.trip_to_jiujiang.Fragment.MyMessageFragment;
+import com.example.trip_to_jiujiang.Fragment.YuYinFragment;
 import com.example.trip_to_jiujiang.R;
 
-public class IndexActivity extends AppCompatActivity {
-    Button but_main;
-    Button but_trip;
-    Button but_help;
-    Button but_mysetting;
-    protected void onCreate(Bundle bundle){
-        super.onCreate(bundle);
-     setContentView(R.layout.index_activity_layout);
-     initView();
-    }
-    private void initView(){
-        but_help = findViewById(R.id.help);
-        but_main = findViewById(R.id.main);
-        but_mysetting = findViewById(R.id.mysetting);
-        but_trip = findViewById(R.id.trip);
-        //设置监听事件
-        but_trip.setOnClickListener(listener);
-        but_mysetting.setOnClickListener(listener);
-        but_main.setOnClickListener(listener);
-        but_help.setOnClickListener(listener);
-
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        Fragment fragment = new IndexFragment();
-        fragmentTransaction.add(R.id.container,fragment).commit();
-    }
-
-    View.OnClickListener listener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            Fragment fragment = null;
-            switch ((v.getId())){
-                case R.id.main:{
-                    fragment = new IndexFragment();
-                    fragmentTransaction.replace(R.id.container,fragment);
-                    fragmentTransaction.commit();
-                    break;
-                }
-                case R.id.trip:{
-                    fragment = new YuYinViewFragment();
-                    fragmentTransaction.replace(R.id.container,fragment);
-                    fragmentTransaction.commit();
-                    break;
-                }
-                case R.id.help:{
-                    fragment = new HelpFragment();
-                    fragmentTransaction.replace(R.id.container,fragment);
-                    fragmentTransaction.commit();
-                    break;
-                }
-                case R.id.mysetting:{
-                    fragment = new MySettingFragment();
-                    fragmentTransaction.replace(R.id.container,fragment);
-                    fragmentTransaction.commit();
-                    break;
-                }
+public class IndexActivity extends AppCompatActivity{
+    private RadioGroup rpTab;
+    private RadioButton index;
+    private RadioButton yuyin;
+    private RadioButton help;
+    private RadioButton my;
+    private Fragment fragment_index;
+    private Fragment fragment_yuyin;
+    private Fragment fragment_help;
+    private Fragment fragment_my;
+    FragmentTransaction fragmentTransaction;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.index_activity_layout);
+        initView();
+        ChangeMainFragment(R.id.rb_index);
+        //默认显示主界面
+        rpTab.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                ChangeMainFragment(checkedId);
             }
+        });
+    }
+
+    private void initView() {
+        rpTab = findViewById(R.id.rd_group);
+        index = findViewById(R.id.rb_index);
+        yuyin = findViewById(R.id.rb_yunyin);
+        help = findViewById(R.id.rb_help);
+        my = findViewById(R.id.rb_my);
+        index.setChecked(true);
+    }
+
+    public void hideAllFragment(FragmentTransaction transaction){
+        if(fragment_index!=null){
+            transaction.hide(fragment_index);
         }
-    };
+        if(fragment_yuyin !=null){
+            transaction.hide(fragment_yuyin);
+        }
+        if(fragment_help!=null){
+            transaction.hide(fragment_help);
+        }
+        if(fragment_my!=null){
+            transaction.hide(fragment_my);
+        }
+    }
+/**************************切换主Fragment***************************/
+private void ChangeMainFragment(int checkId){
+    fragmentTransaction = getSupportFragmentManager().beginTransaction();
+    hideAllFragment(fragmentTransaction);
+    switch (checkId){
+        case R.id.rb_index:
+            if(fragment_index==null){
+                fragment_index = new IndexFragment();
+                fragmentTransaction.add(R.id.fragment_container,fragment_index);
+            }else{
+                fragmentTransaction.show(fragment_index);
+            }
+            break;
+        case R.id.rb_yunyin:
+            if(fragment_yuyin==null){
+                fragment_yuyin = new YuYinFragment();
+                fragmentTransaction.add(R.id.fragment_container,fragment_yuyin);
+            }else{
+                fragmentTransaction.show(fragment_yuyin);
+            }
+            break;
+        case R.id.rb_help:
+            if(fragment_help==null){
+                fragment_help = new HelpFragment();
+                fragmentTransaction.add(R.id.fragment_container,fragment_help);
+            }else{
+                fragmentTransaction.show(fragment_help);
+            }
+            break;
+        case R.id.rb_my:
+            if(fragment_my==null){
+                fragment_my = new MyMessageFragment();
+                fragmentTransaction.add(R.id.fragment_container,fragment_my);
+            }else{
+                fragmentTransaction.show(fragment_my);
+            }
+            break;
+    }
+    fragmentTransaction.commit();
+
+       }//ChangeMainFragment()
 }

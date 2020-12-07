@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="quanbu_dingbusousuo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">9.3dp</item>
+        <item name="android:layout_marginRight">9.3dp</item>
+    </style>
+
+    <style name="quanbu_erweima">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="quanbu_sousuokuang">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginLeft">16.8dp</item>
+        <item name="android:paddingLeft">11.2dp</item>
+        <item name="android:paddingRight">11.2dp</item>
+        <item name="android:textSize">14.9sp</item>
+        <item name="android:textColor">#b4b4b4</item>
+    </style>
+
+    <style name="quanbu_d_d">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="quanbu_lunbotu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">123.6dp</item>
+        <item name="android:layout_marginLeft">9.3dp</item>
+        <item name="android:layout_marginRight">9.3dp</item>
+    </style>
+
+    <style name="quanbu_center_menu_radiogroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="quanbu_center_menu_radiobutton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item><!--去除RadioButton默认带的圆点-->
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>
