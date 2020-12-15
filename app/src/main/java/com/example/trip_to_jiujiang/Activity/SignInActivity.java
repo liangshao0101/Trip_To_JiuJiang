@@ -2,7 +2,6 @@ package com.example.trip_to_jiujiang.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,10 +9,8 @@ import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
-import com.example.trip_to_jiujiang.DataBase.UserOperation;
 import com.example.trip_to_jiujiang.R;
 import com.example.trip_to_jiujiang.model.User;
-
 import java.util.List;
 
 public class SignInActivity extends AppCompatActivity {
@@ -71,7 +68,7 @@ public class SignInActivity extends AppCompatActivity {
             @Override
             public void done(List<User> list, BmobException e) {
                 if (list.size()!= 0) {
-                    Intent intent = new Intent(SignInActivity.this,IndexActivity.class);
+                    Intent intent = new Intent(SignInActivity.this, IndexActivity.class);
                    startActivity(intent);
                     editText_signIn_account.setText("");
                     editText_signIn_password.setText("");

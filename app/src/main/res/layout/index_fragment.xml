@@ -1,112 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              android:background="#f0f0f0">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0">
     //顶部搜索栏
     <RelativeLayout
-            style="@style/quanbu_dingbusousuo"
-            android:background="#0000">
+        style="@style/quanbu_dingbusousuo"
+        android:background="#0000">
         //二维码
         <ImageButton
-                android:id="@+id/erweima"
-                style="@style/quanbu_erweima"
-                android:src="@mipmap/erweima"
-                android:background="#0000">
+            android:id="@+id/erweima"
+            style="@style/quanbu_erweima"
+            android:src="@mipmap/erweima"
+            android:background="#0000">
         </ImageButton>
         //搜索框
         <SearchView
-                android:id="@+id/sousuo"
-                style="@style/quanbu_sousuokuang"
-                android:layout_toRightOf="@+id/erweima"
-                android:layout_alignBottom="@+id/erweima"
-                android:layout_alignParentRight="true"
-                android:background="#FFFFFF">
+            android:id="@+id/sousuo"
+            style="@style/quanbu_sousuokuang"
+            android:layout_toRightOf="@+id/erweima"
+            android:layout_alignBottom="@+id/erweima"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF">
         </SearchView>
 
     </RelativeLayout>
     //轮播图
     <RelativeLayout
-            android:layout_width="match_parent"
-            android:background="@drawable/indexpicture3"
-            android:layout_height="134dp"
-            android:layout_marginTop="5dp">
+        android:layout_width="match_parent"
+        android:background="@drawable/indexpicture3"
+        android:layout_height="134dp"
+        android:layout_marginTop="5dp">
 
         <RelativeLayout
 
-                android:layout_width="350dp"
-                android:layout_height="150dp"
-              android:layout_centerHorizontal="true"
-                >
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            >
 
             <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/vp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-            />
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
 
             <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="35dip"
-                    android:layout_gravity="bottom"
-                    android:background="#0000"
-                    android:gravity="center"
-                    android:layout_alignParentBottom="true"
-                    android:orientation="vertical" >
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_gravity="bottom"
+                android:background="#0000"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
 
                 <TextView
-                        android:id="@+id/title"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/white" />
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white" />
 
                 <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dip"
-                        android:orientation="horizontal" >
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:orientation="horizontal" >
 
                     <View
-                            android:id="@+id/dot_0"
-                            android:layout_width="10dip"
-                            android:layout_height="10dip"
-                            android:layout_marginLeft="2dip"
-                            android:layout_marginRight="2dip"
-                            android:background="@drawable/dot_no"/>
+                        android:id="@+id/dot_0"
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/dot_no"/>
 
                     <View
-                            android:id="@+id/dot_1"
-                            android:layout_width="10dip"
-                            android:layout_height="10dip"
-                            android:layout_marginLeft="2dip"
-                            android:layout_marginRight="2dip"
-                            android:background="@drawable/dot_off"/>
+                        android:id="@+id/dot_1"
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/dot_off"/>
 
                     <View
-                            android:id="@+id/dot_2"
-                            android:layout_width="10dip"
-                            android:layout_height="10dip"
-                            android:layout_marginLeft="2dip"
-                            android:layout_marginRight="2dip"
-                            android:background="@drawable/dot_off"/>
+                        android:id="@+id/dot_2"
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/dot_off"/>
 
                     <View
-                            android:id="@+id/dot_3"
-                            android:layout_width="10dip"
-                            android:layout_height="10dip"
-                            android:layout_marginLeft="2dip"
-                            android:layout_marginRight="2dip"
-                            android:background="@drawable/dot_off"/>
+                        android:id="@+id/dot_3"
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/dot_off"/>
 
                     <View
-                            android:id="@+id/dot_4"
-                            android:layout_width="10dip"
-                            android:layout_height="10dip"
-                            android:layout_marginLeft="2dip"
-                            android:layout_marginRight="2dip"
-                            android:background="@drawable/dot_off"/>
+                        android:id="@+id/dot_4"
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/dot_off"/>
 
                 </LinearLayout>
 
@@ -120,92 +120,92 @@
 
     //中间菜单栏
     <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
         <RadioGroup
-                android:id="@+id/centermenuup"
-                style="@style/quanbu_center_menu_radiogroup"
-                android:layout_alignParentBottom="true"
-                android:background="#f0f0f0">
+            android:id="@+id/centermenuup"
+            style="@style/quanbu_center_menu_radiogroup"
+            android:layout_alignParentBottom="true"
+            android:background="#f0f0f0">
 
             <RadioButton
-                    android:id="@+id/transport"
-                    style="@style/quanbu_center_menu_radiobutton"
-                    android:checked="true"
-                    android:drawableTop="@drawable/transport"
-                    android:text="交通"
-                    android:textColor="#000000" />
+                android:id="@+id/transport"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:checked="true"
+                android:drawableTop="@drawable/transport"
+                android:text="交通"
+                android:textColor="#000000" />
 
             <RadioButton
-                    android:id="@+id/tickets_order"
-                    style="@style/quanbu_center_menu_radiobutton"
-                    android:checked="true"
-                    android:drawableTop="@drawable/tickets_order"
-                    android:text="门票预订"
-                    android:textColor="#000000" />
+                android:id="@+id/tickets_order"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:checked="true"
+                android:drawableTop="@drawable/tickets_order"
+                android:text="门票预订"
+                android:textColor="#000000" />
 
             <RadioButton
-                    android:id="@+id/jingpingluxian"
-                    style="@style/quanbu_center_menu_radiobutton"
-                    android:drawableTop="@drawable/jingpingluxian"
-                    android:text="精品路线"
-                    android:textColor="#000000" />
+                android:id="@+id/jingpingluxian"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:drawableTop="@drawable/jingpingluxian"
+                android:text="精品路线"
+                android:textColor="#000000" />
 
             <RadioButton
-                    android:id="@+id/xunyang_food"
-                    style="@style/quanbu_center_menu_radiobutton"
-                    android:drawableTop="@drawable/food"
-                    android:text="浔阳美食"
-                    android:textColor="#000000" />
+                android:id="@+id/xunyang_food"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:drawableTop="@drawable/food"
+                android:text="浔阳美食"
+                android:textColor="#000000" />
 
         </RadioGroup>
 
         <RadioGroup
-                android:id="@+id/centermenudown"
-                style="@style/quanbu_center_menu_radiogroup"
-                android:layout_alignParentBottom="true"
-                android:background="#f0f0f0">
+            android:id="@+id/centermenudown"
+            style="@style/quanbu_center_menu_radiogroup"
+            android:layout_alignParentBottom="true"
+            android:background="#f0f0f0">
 
             <RadioButton
-                    android:id="@+id/hotel_order"
-                    style="@style/quanbu_center_menu_radiobutton"
-                    android:checked="true"
-                    android:drawableTop="@drawable/hotle_order"
-                    android:text="酒店预订"
-                    android:textColor="#000000" />
+                android:id="@+id/hotel_order"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:checked="true"
+                android:drawableTop="@drawable/hotle_order"
+                android:text="酒店预订"
+                android:textColor="#000000" />
 
             <RadioButton
-                    android:id="@+id/play_xunyang"
-                    style="@style/quanbu_center_menu_radiobutton"
-                    android:checked="true"
-                    android:drawableTop="@drawable/play_xunyang"
-                    android:text="共游浔阳"
-                    android:textColor="#000000" />
+                android:id="@+id/play_xunyang"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:checked="true"
+                android:drawableTop="@drawable/play_xunyang"
+                android:text="共游浔阳"
+                android:textColor="#000000" />
 
             <RadioButton
-                    android:id="@+id/xunyanggonglie"
-                    style="@style/quanbu_center_menu_radiobutton"
-                    android:drawableTop="@drawable/gonglie"
-                    android:text="浔阳攻略"
-                    android:textColor="#000000" />
+                android:id="@+id/xunyanggonglie"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:drawableTop="@drawable/gonglie"
+                android:text="浔阳攻略"
+                android:textColor="#000000" />
 
             <RadioButton
-                    android:id="@+id/interest_xunyang"
-                    style="@style/quanbu_center_menu_radiobutton"
-                    android:drawableTop="@drawable/instrest_xunyang"
-                    android:text="趣味浔阳"
-                    android:textColor="#000000" />
+                android:id="@+id/interest_xunyang"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:drawableTop="@drawable/instrest_xunyang"
+                android:text="趣味浔阳"
+                android:textColor="#000000" />
         </RadioGroup>
 
     </TableLayout>
 
     <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/indexbeijing">
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/indexbeijing">
 
     </RelativeLayout>
 
