@@ -57,12 +57,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_info_top_margin"
             android:layout_marginLeft="@dimen/activity_info_left_margin"
+
             android:textSize="24dp"
             android:clickable="true"
             android:text="浔阳圈"
     />
     <TextView
-            android:id="@+id/message"
+            android:id="@+id/speclity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clickable="true"
@@ -78,6 +79,7 @@
             android:clickable="true"
             android:layout_marginTop="@dimen/activity_info_top_margin"
             android:layout_marginLeft="@dimen/activity_info_left_margin"
+
             android:textSize="24dp"
             android:text="更改密码"
     />
@@ -88,6 +90,7 @@
             android:clickable="true"
             android:layout_marginTop="@dimen/activity_info_top_margin"
             android:layout_marginLeft="@dimen/activity_info_left_margin"
+
             android:textSize="24dp"
             android:text="退出"
     />

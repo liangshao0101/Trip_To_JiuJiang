@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:background="@color/colorTitleWidget"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titleHeight"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:id="@+id/xunyanglou_backArrow"
+                android:src="@drawable/back_arrow_image"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+        <TextView
+                android:text="浔阳楼介绍"
+                android:textSize="22sp"
+                android:textColor="#4e4e4e"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/image_xunyanglou"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="30dp"
+              android:text="浔阳楼，江南十大名楼之一，位于江西省九江市浔阳区滨江东路，紧靠长江之滨。因九江古称浔阳而得名，初为民间酒楼，至今已有1200年的历史，是融名楼、名著、名酒为一体的景点。
+浔阳楼之名最早见之于唐代江州（今江西九江）刺史韦应物的诗中。随后，白居易在《题浔阳楼》诗中又描写了它周围的景色，而真正使浔阳楼出名的是古典名著《水浒传》。小说中的宋江题反诗、李逵劫法场等故事使浔阳楼名噪天下。
+现在的浔阳楼，为1987年由九江市人民政府重建。总体占地2000平方米。主楼占地300平方米，高21米，外三层内四层，九脊层顶，龙檐飞翔，瓦朱栏，四面回廊，古朴凝重，建筑面积为1000平方米。
+浔阳楼曾由设计过黄鹤楼的工程师向欣然设计。在设计过程中，他参照舆刊本《水浒传》插图和宋代《清明上河图》的建筑风格，进行设计。楼北两面顶檐下各悬有由赵朴初题写的《浔阳楼》巨幅匾额。
+"
+              android:textColor="#000000"
+              android:textSize="20dp"/>
+</LinearLayout>

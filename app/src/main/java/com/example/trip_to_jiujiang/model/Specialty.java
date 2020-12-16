@@ -10,12 +10,12 @@ public class Specialty extends BmobObject {
     private String specialtyName;    //特产名称
     private int specialtyPrice;   //特产价格
     private Date specialtyDate;   //特产创建日期
-    private User suserNumber;   //用户账号，用来和用户表相关联
+    private String  suserNumber;   //用户账号，用来和用户表相关联
 
     public Specialty() {
     }
 
-    public Specialty(String specialtyId, String specialtySort, String specialtyName, int specialtyPrice, Date specialtyDate, User suserNumber) {
+    public Specialty(String specialtyId, String specialtySort, String specialtyName, int specialtyPrice, Date specialtyDate, String suserNumber) {
         this.specialtyId = specialtyId;
         this.specialtySort = specialtySort;
         this.specialtyName = specialtyName;
@@ -64,11 +64,11 @@ public class Specialty extends BmobObject {
         this.specialtyDate = specialtyDate;
     }
 
-    public User getSuserNumber() {
+    public String getSuserNumber() {
         return suserNumber;
     }
 
-    public void setSuserNumber(User suserNumber) {
+    public void setSuserNumber(String suserNumber) {
         this.suserNumber = suserNumber;
     }
 }

@@ -12,12 +12,12 @@ public class Tickets extends BmobObject {
     private int ticketsPrice;    //门票价格
     private int tiPriceDiscount;   //优惠价
     private int ticketsNumber;    //剩余票量
-    private User tuserNumber;    //用户账号，用于与用户表关联
+    private String tuserNumber;    //用户账号，用于与用户表关联
 
     public Tickets() {
     }
 
-    public Tickets(String ticketsId, String ticketsSort, String ticketsArea, Date ticketsDate, int ticketsPrice, int tiPriceDiscount, int ticketsNumber, User tuserNumber) {
+    public Tickets(String ticketsId, String ticketsSort, String ticketsArea, Date ticketsDate, int ticketsPrice, int tiPriceDiscount, int ticketsNumber, String tuserNumber) {
         this.ticketsId = ticketsId;
         this.ticketsSort = ticketsSort;
         this.ticketsArea = ticketsArea;
@@ -84,11 +84,11 @@ public class Tickets extends BmobObject {
         this.ticketsNumber = ticketsNumber;
     }
 
-    public User getTuserNumber() {
+    public String  getTuserNumber() {
         return tuserNumber;
     }
 
-    public void setTuserNumber(User tuserNumber) {
+    public void setTuserNumber(String tuserNumber) {
         this.tuserNumber = tuserNumber;
     }
 }

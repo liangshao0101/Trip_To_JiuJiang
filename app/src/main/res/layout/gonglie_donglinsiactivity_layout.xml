@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+                android:background="@color/colorTitleWidget"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titleHeight"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/donglinsi2_backArrow"
+                    android:src="@drawable/back_arrow_image"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+            <TextView
+                    android:text="东林寺游玩攻略"
+                    android:textSize="22sp"
+                    android:textColor="#4e4e4e"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/image_gonglie_donglinsi_one"
+                   />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="东林寺游玩介绍"
+                  android:gravity="center"
+                  android:textSize="30dp"
+                  android:textColor="#000000"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="20dp"
+                  android:text="东林寺位于长江南岸，庐山香炉以北的乌龙潭地形雄伟，东林寺始建于东晋大元九年（384年），是庐山最古老的寺院之一。东林寺是中国纯学者派的发源地，是南方佛教的中心，自隋朝以来它一直是中国佛教的八大大道之一。东林寺净土园规划之初，是在自然景观控制规划的前提下进行设计的，整个园区中心线的走向、主要建筑规模和建筑标准的标高基本保持了原有的控制规划和设计意图。
+
+"/>
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:id="@+id/image_gonglie_donglinsi_two"
+                  />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="20dp"
+                  android:text="相传东林寺始，慧远大师就担心木材的事情，有一天在他梦里看见一个白胡子的老人，自称“庐山之神”。他对远公说，“这地方安静得足以居住了。”当晚，天空中电闪雷鸣，暴风雨不断，直到天亮，当一看，宫前池塘里已经涌出了许多好木材，以解决慧远大师的迫切需要。所有这些都来自于慧远大师对天地、美德和灵性的真挚看法，所以这是上帝对他的帮助。后来，慧远大师将用这种木材建造的宫殿命名为“神运殿”，木材涌出的池塘称为“出木池”，东林寺玉佛塔后，有一个清泉叫“聪明泉”，四季不干。"/>
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:id="@+id/image_gonglie_donglinsi_three"
+                  />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="20dp"
+                  android:text="传说东晋著名将领殷将军在东林寺拜访慧远大师，他们走到山脚下，在这里看到了苍松翠柏和泉水的涟漪，这样他们就可以听到泉水的声音，殷将军学识渊博，能言善辩。慧远大师指着泉说：“将军之辩，如此泉涌，君侯聪明，若斯泉矣！”于是乎这个泉就被称为“聪明泉”。唐太宗在书法中写下了“聪明泉”，晚唐著名诗人皮日休也有诗云：“一勺如琼液，将愚拟圣贤。欲知心不变，还似饮贪泉。”后来还把这句话铭刻成了一块纪念碑。到目前为止，许多游客到东林寺都要喝一勺“聪明泉”水，这是人们追求智慧的好希望。"/>
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:id="@+id/image_gonglie_donglinsi_four"
+                   />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:background="@color/colorTitleWidget"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titleHeight"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:id="@+id/taoyuanming_backArrow"
+                android:src="@drawable/back_arrow_image"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+        <TextView
+                android:text="陶渊明介绍"
+                android:textSize="22sp"
+                android:textColor="#4e4e4e"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/image_taoyuanming"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="30dp"
+              android:text="陶渊明（约365～427年），字元亮，晚年更名潜，字渊明。别号五柳先生，私谥靖节，世称靖节先生。浔阳柴桑（今江西九江）人。东晋末到刘宋初杰出的诗人、辞赋家、散文家。被誉为“隐逸诗人之宗”、“田园诗派之鼻祖”。是江西首位文学巨匠。
+曾任江州祭酒、建威参军、镇军参军、彭泽县令等职，最末一次出仕为彭泽
+县令，八十多天便弃职而去，从此归隐田园。他是中国第一位田园诗人，被称为“古今隐逸诗人之宗 ”，有《陶渊明集》。
+"
+              android:textSize="20dp"
+              android:textColor="#000000"/>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:background="@color/colorTitleWidget"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titleHeight"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:id="@+id/huxixiaotan_backArrow"
+                android:src="@drawable/back_arrow_image"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+        <TextView
+                android:text="“虎溪笑谈”典故"
+                android:textSize="22sp"
+                android:textColor="#4e4e4e"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/image_huxixiaotan"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="30dp"
+              android:textColor="#000000"
+              android:textSize="20dp"
+              android:text="东晋时，著名的禅宗法师慧远在庐山修行，三十馀年间，不但不下山、入城，送客也从不越过虎溪。一日，诗人陶渊明、道士陆修静两人远道来访，三人相聚，相谈甚欢。后来，慧远送他们下山。到了虎溪，三人耳旁虽不时传来老虎的鸣号声，但因为谈得太热烈，竟完全没发觉。直到越过了虎溪，三人才惊觉，但旋即会心地纵情大笑起来。原来，他们在不经意间，已破除了不过虎溪的执念，笑声传递了他们难以言喻的欣喜之情，自然也成了名垂千古的美声了。
+“虎溪三笑”的故事虽经史学家证实为后人编造，但反映了儒、释、道三家相互交融的一面，为历代名士所欣赏。李白在《别东林寺僧》一诗中就写道：“东林送客处，月出白猿啼，笑别庐山远，何烦过虎溪。”至今东林寺内的“三笑堂”和蹲伏在虎溪桥畔的石虎，都源出这则传说。
+明朝成化帝宪宗朱见深登基不久绘制的《一团和气图》亦是以虎溪三笑故事为题材，现藏于北京故宫博物院。此图乍看如同一人，细看实为一孺、一僧、一道三人合抱相视而笑，构图精巧
+。"/>
+</LinearLayout>

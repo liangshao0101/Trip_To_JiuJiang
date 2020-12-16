@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+            android:background="@color/colorTitleWidget"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titleHeight"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:id="@+id/lushan_backArrow"
+                android:src="@drawable/back_arrow_image"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+        <TextView
+                android:text="庐山游玩攻略"
+                android:textSize="22sp"
+                android:textColor="#4e4e4e"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/image_gonglie_lushan_one"
+               />
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:gravity="center"
+              android:text="庐山一日，两日游景点和路线"
+              android:textSize="30dp"
+              android:textColor="#000000"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+              android:textColor="#000000"
+              android:textSize="20dp"
+              android:text="庐山以雄、奇、险、秀闻名于世，素有“匡庐奇秀甲天下”之誉。自古命名的山峰有171座，群峰间散布冈岭26座，壑谷20条，岩洞16个，怪石22处。水流在河谷发育裂点，形成许多急流与瀑布，瀑布22处，溪涧18条，湖潭
+              14处。最为著名的三叠泉瀑布，落差达155米，有“不到三叠泉，不算庐山客”之美句。那么庐山有什么好看的景色呢？我给大家慢慢介绍吧。"/>
+<ImageView android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:id="@+id/image_gonglie_lushan_two"
+           />
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="三叠泉瀑布"
+              android:textSize="40dp"
+              android:textColor="#000000"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:text="首先我们来到了山下，因为山比较高，建议大家可以先自己走上去，到时候如果累了，大家可以叫轿夫，轿夫在半山腰都会有，轿夫们度很热情，这里是按时计费的，每个小时好像30元，价格还可以接受吧，呵呵！
+
+
+2、沿路我们可以看到各种大自然的神奇美景，山峦叠翠，
+
+
+
+首先大家来到第一个景点秀峰，秀峰是香炉峰，双剑峰、文殊峰、鹤鸣峰、狮子峰、龟背峰、姊妹峰等诸峰的总称，在这里也可以看的到瀑布，但不是这里最好看的。再往上走，走在山间，伴着瀑布水声，仿佛走在大峡谷边，正是不是峡谷盛是峡谷啊
+
+
+4、鹰嘴峰，是不是很险峻那，有没有看出两峰之间有点像鹰嘴的味道呢。接着往上走我们就来到了另一景点——五老峰，五老峰是因山的绝顶被垭口所断，分成并列的五个山峰，仰望俨若席地而坐的五位老翁，故人们便把这原出一山的五个山峰统称为“五老峰”，是不是有点像五位老人呢。最后我我们就来到我们的三叠泉了，介绍我们的重头戏三叠泉，泉水从三层泉眼发出势如破竹，宛如老人的胡须。"
+              android:textColor="#000000"
+              android:textSize="20dp"/>
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/image_gonglie_lushan_three"
+               android:layout_marginTop="20dp"
+               />
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/image_gonglie_lushan_four"
+               android:layout_marginTop="20dp"
+               />
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="40dp"
+              android:textColor="#000000"
+              android:text="庐山西线"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:textColor="#000000"
+              android:textSize="20dp"
+              android:text="西线主要景点有牯岭街、花径公园、如琴湖、锦绣谷、大天池、小天池、石门涧等。牯岭街是庐山景区的中心，牯岭街上商店鳞次栉比，是多数游客的首到之地，既解决食宿的后顾之忧，也方便乘车到各景点游览。
+石雕牛为牯岭街的景观标志。花径公园；庐山的主要景点之一，位于牯岭街西南2公里处的如琴湖畔，坐车到牯岭正街站，沿大林路步行逐渐而下，路两旁大树林立，环境良好。如琴湖(花径湖)；俯瞰湖面如一把提琴而得名。湖光山色，风景如画。花径；唐朝诗人白居易于公元816年登庐山游览到此，时值四月暮春，山下桃花已落而此处桃花盛开，白居易有感吟诗一首“人间四月芳菲尽，山寺桃花始盛开。长恨春归无觅处，不知转入此中来。”锦绣谷在1980年依山崖建有1.5公里的观景道，沿线景点有天桥、好运石、险峰、仙人洞、御碑亭等，是庐山著名的观景地之一。
+锦绣谷的第一景“天桥”。好运石；导游介绍，好运石有三摸之说，“一摸官运，二摸财运，三摸桃花运”。“其实对我们老年人只要健健康康平平安安就好。”"/>
+</LinearLayout>
+</ScrollView>

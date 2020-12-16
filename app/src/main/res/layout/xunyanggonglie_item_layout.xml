@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<ImageView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/imagebutton_item_xunyangonglie"
+           android:alpha="0.6"/>
+    <TextView android:layout_width="400dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/textview_xunyangonglie"
+              android:textSize="30dp"
+              android:layout_marginLeft="60dp"
+              android:gravity="center"
+              android:layout_marginTop="180dp"
+              android:textColor="#ffffff"/>
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:background="@color/colorTitleWidget"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titleHeight"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:id="@+id/timeandmoney_backArrow"
+                android:src="@drawable/back_arrow_image"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+        <TextView
+                android:text="”一寸光阴一寸金“典故"
+                android:textSize="22sp"
+                android:textColor="#4e4e4e"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/image_timeandmoney"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="30dp"
+              android:textColor="#000000"
+              android:textSize="20dp"
+              android:text="这句劝人要珍惜时间的警示格言。也是现在所有家长们在教育小孩时用的最多的话，知道会说这句话的人比比皆是！但，大家对这句古语诗词的出处和它背后的历史故事，估计就是没有几个人能“道得清，说的明”了吧！
+
+首先这句话的最早出处，是来自唐朝的一位名叫王贞白诗人的七绝诗中的《白鹿洞》读书不觉已春深，一寸光阴一寸金。不是道人来引笑，周情孔思正追寻。
+故事讲的是少年时期的王贞白，为了求学便离家独自来到了九江庐山五老峰下的“白鹿洞书院”读书的事。由于他在白鹿洞书院这里读书十分刻苦和惜时，就用诗词记述了自己专心读书时的经历。而这首《白鹿洞》诗词也是王贞白当时在读书之时有感而发写下的一首对时间忘我的诗，也是对自己年轻时就知道光阴宝贵的孜孜不倦求学生涯的真实写照。
+王贞白（公元875年—公元958年），字有道，号灵溪，今江西省上饶市广丰区人。唐末五代十国著名诗人。唐乾宁二年的进士，授职校书郎，后来由于看不惯政治上的污浊与腐败，深感自己无力挽救日益衰败的大唐社稷而弃官退隐，其人文思敏捷、才华卓绝，尤其他的品德和学问均是当时和后来者倍加推祟的，也是晚唐颇负盛名的一位诗人。
+"/>
+</LinearLayout>

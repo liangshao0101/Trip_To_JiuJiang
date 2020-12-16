@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+                android:background="@color/colorTitleWidget"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titleHeight"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/baimuda_backArrow"
+                    android:src="@drawable/back_arrow_image"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+            <TextView
+                    android:text="东方百慕大游玩攻略"
+                    android:textSize="22sp"
+                    android:textColor="#4e4e4e"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/image_gonglie_baimuda_one"
+                  />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="老爷庙和东方百慕大游玩介绍"
+                  android:gravity="center"
+                  android:textSize="30dp"
+                  android:textColor="#000000"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="20dp"
+                  android:text="自然特征 鄱阳湖南北长173公里，东西最宽处达74公里，平均宽16.9公里，湖岸线长1200公里，湖体面积4125平方公里（湖口水位20.5米时），平均水深8.4米，最深处25.1米左右，容积约276亿立方米，是我国最大的淡水湖泊。它承纳赣江、抚河、信江、饶河,修河五大河。经调蓄后，由湖口注入我国第一大河——长江，每年流入长江的水量超过黄河、淮河、海河三河水量的总和，是一个季节性、吞吐型的湖泊。鄱阳湖水系流域面积16.22万km2，约占江西省流域面积的97%，占长江流域面积的9%：其水系年均径流量为1525亿立方米，约占长江流域年均径流量的16.3%。"/>
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/image_gonglie_baimuda_two"
+                   />
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="20dp"
+                  android:text="落星墩 ：又名“落星石”，亦称“德星山”。位于星子县城南二里湖中。北魏郦道元《水经注》载：落星石，周迥百余步，高五丈，上生竹木。传曰有星坠此以名焉。星子由此得名，落星石也既成了星子县一个重要的标志与象征。
+        保护区观鸟 ：保护区位于赣江修水交汇处的鄱阳湖滨，永修县吴城镇范围内，面积约224平方公里，由大湖池、中湖池、沙池、蚌湖等9各季节性湖泊组成，春夏洪水时这一带连成一片，冬季枯水时各自成湖。由于水草茂盛，鱼类丰富，气候适宜，无工业污染，从而成为候鸟的最重要的越冬栖息地。这里是鄱阳湖保存良好的一块典型湿地，是鄱阳湖越冬水禽分布最集中的地方。1984年就是在这里发现了世界最大的白鹤群（840只），震动了世界鸟类学界。"/>
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/image_gonglie_baimuda_three"
+                   />
+
+    </LinearLayout>
+</ScrollView>

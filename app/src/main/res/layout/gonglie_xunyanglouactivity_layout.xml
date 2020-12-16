@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+                android:background="@color/colorTitleWidget"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titleHeight"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/xunyanglou2_backArrow"
+                    android:src="@drawable/back_arrow_image"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+            <TextView
+                    android:text="浔阳楼游玩攻略"
+                    android:textSize="22sp"
+                    android:textColor="#4e4e4e"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/image_gonglie_xunyanglou_one"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="浔阳楼游玩介绍"
+                  android:gravity="center"
+                  android:textSize="30dp"
+                  android:textColor="#000000"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="20dp"
+                  android:text="浔阳楼是中国江南十大名楼之一，因九江古称浔阳而得名，初为民间酒楼，至今已有1200多年历史，雄距江畔的浔阳楼也历来是名人云集之地。如：白居易、韦应物、苏东坡等等，都曾登楼题吟。留下许多脍炙人口的佳话，更因施耐庵写下一部《水浒》，其中一位主要人物——宋江浔阳楼醉酒题反诗，随着名人名著流芳百世，浔阳楼也蜚声海内外。"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/image_gonglie_xunyanglou_two"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="20dp"
+                  android:text="浔阳楼，至今已有1200年的历史，是溶名楼、名著、名酒为一体的景点。
+浔阳楼之名最早见之于唐代江州（今 江西 九江 ）刺史韦应物的诗中。随后，白居易在《题浔阳楼》诗中又描写了它周围的景色，而真正使浔阳楼出名的是古典名著《水浒传》。小说中的宋江题反诗、李逵劫法场等故事使浔阳楼名噪天下。
+现在的浔阳楼，为1987年由 九江 市人民政府重建。总体占地2000平方米。主楼占地300平方米，高21米，外三层内四层，九脊层顶，龙檐飞翔，瓦朱栏，四面回廊，古朴凝重，建筑面积为1000平方米。"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/image_gonglie_xunyanglou_three"
+        />
+    </LinearLayout>
+</ScrollView>

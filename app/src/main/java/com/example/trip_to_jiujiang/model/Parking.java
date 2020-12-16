@@ -13,12 +13,12 @@ public class Parking extends BmobObject {
     private Date parkingStartTime;   //开始停车时间
     private Date parkingDate;    //停车订单创建时间,停车结束时间
     private int parkingTime;   //停车时长
-    private User puserNumber;  //用户账号，用来与用户表相关联
+    private String  puserNumber;  //用户账号，用来与用户表相关联
 
     public Parking() {
     }
 
-    public Parking(String parkingId, String carNumber, String parkingArea, int parkingPrice, Date parkingStartTime, Date parkingDate, int parkingTime, User puserNumber) {
+    public Parking(String parkingId, String carNumber, String parkingArea, int parkingPrice, Date parkingStartTime, Date parkingDate, int parkingTime, String puserNumber) {
         this.parkingId = parkingId;
         this.carNumber = carNumber;
         this.parkingArea = parkingArea;
@@ -85,11 +85,11 @@ public class Parking extends BmobObject {
         this.parkingTime = parkingTime;
     }
 
-    public User getPuserNumber() {
+    public String  getPuserNumber() {
         return puserNumber;
     }
 
-    public void setPuserNumber(User puserNumber) {
+    public void setPuserNumber(String puserNumber) {
         this.puserNumber = puserNumber;
     }
 }

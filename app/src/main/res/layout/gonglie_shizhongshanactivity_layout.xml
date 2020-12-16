@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+                android:background="@color/colorTitleWidget"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titleHeight"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/shizhongshan_backArrow"
+                    android:src="@drawable/back_arrow_image"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+            <TextView
+                    android:text="石钟山游玩攻略"
+                    android:textSize="22sp"
+                    android:textColor="#4e4e4e"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/image_gonglie_shizhongshan_one"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="石钟山游玩介绍"
+                  android:gravity="center"
+                  android:textSize="30dp"
+                  android:textColor="#000000"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="20dp"
+                  android:text="石钟山 ，素有“中国千古奇音第一山”之称，位于江西省九江市湖口县城区，长江与鄱阳湖交汇处。是国家级风景名胜区，国家AAAA级旅游景区，长江下游沿线上的主要景点之一。"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="30dp"
+                   android:id="@+id/image_gonglie_shizhongshan_two"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="40dp"
+                  android:text="江湖两色"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="20dp"
+                  android:text="江湖两色，位于江西省九江市湖口县石钟山附近水域（鄱阳湖口），长江与鄱阳湖在此交汇融合。左侧长江水呈黄褐色，右侧鄱阳湖水显绿黄色。两水交汇，清浊分明，堪称奇观。
+浑浊的长江之水与清澈的鄱阳湖之水非常分明，大自然绘制出了一幅壮观奇妙的“泾渭图”。
+站在石钟山上远眺，江水西来清洌，湖水南来浑浊。清浊之水在石钟山下形成一条明显的分界线，延绵50余里。引来不少游客前来观赏。"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="30dp"
+                   android:id="@+id/image_gonglie_shizhongshan_three"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="40dp"
+                  android:text="昭忠祠"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="20dp"
+                  android:text="建于石钟山顶。清咸丰八年（1858）彭玉麟等奉上谕建造，是石钟山的主体建筑。祠分前庑后庑，面对江湖，视野开阔。曾国藩、彭玉麟均有记，并手书碑刻，曾、彭等若干人为祠撰写的长短联达百余幅。祠前辟有广场，祠两侧古樟也是彭玉麟等手植。祠内新创编钟古乐演奏项目，所用编钟系按湖北曾侯乙古墓出土编钟仿制。"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="30dp"
+                   android:id="@+id/image_gonglie_shizhongshan_four"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="40dp"
+                  android:text="英雄石"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="20dp"
+                  android:text="在上石钟山麓，昂踞岩石之巅。相传为明代朱元璋大将常遇春与陈友谅交战时，用枪挑放于此。石上，至今还留存着枪剌的痕迹。"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="30dp"
+                   android:id="@+id/image_gonglie_shizhongshan_five"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="40dp"
+                  android:text="碑廊"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="#000000"
+                  android:textSize="20dp"
+                  android:text="从绿荫深处至锁江亭，沿长廊壁间，陈列着历代与石钟山有关的名家简介、浣香别墅、唐魏征手书碑刻及全山宋、元、明、清历代碑刻及石刻，列为江西省重点文物保护单位。"/>
+
+</LinearLayout>
+</ScrollView>

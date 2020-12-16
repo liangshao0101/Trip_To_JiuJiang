@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:background="@color/colorTitleWidget"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titleHeight"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:id="@+id/donglinsi_backArrow"
+                android:src="@drawable/back_arrow_image"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+        <TextView
+                android:text="东林寺介绍"
+                android:textSize="22sp"
+                android:textColor="#4e4e4e"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/image_donglinsi"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="30dp"
+              android:textColor="#000000"
+              android:textSize="20dp"
+              android:text="东林寺，位于江西省九江市庐山西麓，北距九江市16公里，东距庐山牯岭街 50公里。因处于西林寺以东，故名东林寺。
+东林寺建于东晋大元九年 （384年），为庐山上历史悠久的寺院之一。东林寺是佛教净土宗（又称莲宗）的发源地，也被日本佛教净土宗和净土真宗视为祖庭。
+1983年，被国务院列为汉族地区佛教全国重点寺院、国家著名佛教道场、江西省三大国际交流道场之一。
+东林寺自建造以来，至2014年已有1600多年历史，沧桑历尽，屡废屡兴。"/>
+</LinearLayout>

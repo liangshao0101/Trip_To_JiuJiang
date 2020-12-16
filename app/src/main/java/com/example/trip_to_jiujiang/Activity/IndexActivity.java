@@ -1,6 +1,8 @@
 package com.example.trip_to_jiujiang.Activity;
 
+import android.app.LocalActivityManager;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +23,7 @@ public class IndexActivity extends AppCompatActivity{
     private Fragment fragment_index;
     private Fragment fragment_yuyin;
     private Fragment fragment_help;
-    private Fragment fragment_my;
+   private Fragment fragment_my;
     FragmentTransaction fragmentTransaction;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,12 @@ public class IndexActivity extends AppCompatActivity{
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 ChangeMainFragment(checkedId);
+            }
+        });
+        my.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }

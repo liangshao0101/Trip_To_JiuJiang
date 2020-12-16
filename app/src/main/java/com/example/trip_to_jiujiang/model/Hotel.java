@@ -12,12 +12,12 @@ public class Hotel extends BmobObject {
     private int hoPriceDiscount;   //酒店优惠价格
     private int hotelPrice;   //酒店价格
     private Date hotelDate;    //订单创建时间
-    private User huserNumber;   //用户账号，用来与用户表关联
+    private String huserNumber;   //用户账号，用来与用户表关联
 
     public Hotel() {
     }
 
-    public Hotel(String hotelId, String hotelSort, String hotelName, int hotelNumber, int hoPriceDiscount, int hotelPrice, Date hotelDate, User huserNumber) {
+    public Hotel(String hotelId, String hotelSort, String hotelName, int hotelNumber, int hoPriceDiscount, int hotelPrice, Date hotelDate, String huserNumber) {
         this.hotelId = hotelId;
         this.hotelSort = hotelSort;
         this.hotelName = hotelName;
@@ -84,11 +84,11 @@ public class Hotel extends BmobObject {
         this.hotelDate = hotelDate;
     }
 
-    public User getHuserNumber() {
+    public String getHuserNumber() {
         return huserNumber;
     }
 
-    public void setHuserNumber(User huserNumber) {
+    public void setHuserNumber(String huserNumber) {
         this.huserNumber = huserNumber;
     }
 }
