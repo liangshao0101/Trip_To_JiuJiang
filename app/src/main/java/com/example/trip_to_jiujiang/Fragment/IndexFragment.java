@@ -13,8 +13,7 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.example.trip_to_jiujiang.Activity.InterestXunYangActivity;
-import com.example.trip_to_jiujiang.Activity.XunYangGongLieActivity;
+import com.example.trip_to_jiujiang.Activity.*;
 import com.example.trip_to_jiujiang.R;
 import com.squareup.picasso.Picasso;
 
@@ -309,9 +308,8 @@ public class IndexFragment extends Fragment {
         rb_transport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "交通", Toast.LENGTH_SHORT).show();
-                Intent it_transport = new Intent();
-                it_transport.setClass(getActivity(), TransportFragment.class);
+                Toast.makeText(getActivity(), "交通", Toast.LENGTH_LONG).show();
+                Intent it_transport = new Intent(getActivity(), TransportActivity.class);
                 startActivity(it_transport);
             }
         });//交通模块
@@ -319,9 +317,9 @@ public class IndexFragment extends Fragment {
         rb_tickets_order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "门票预订", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "门票预订", Toast.LENGTH_LONG).show();
                 Intent it_tickets_order = new Intent();
-                it_tickets_order.setClass(getActivity(), TicketsOrderFragment.class);
+                it_tickets_order.setClass(getActivity(), TicketsOrderActivity.class);
                 startActivity(it_tickets_order);
             }
         });//门票预订
@@ -329,9 +327,9 @@ public class IndexFragment extends Fragment {
         rb_jingpingluxian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "精品路线", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "精品路线", Toast.LENGTH_LONG).show();
                 Intent it_jingpingluxia = new Intent();
-                it_jingpingluxia.setClass(getActivity(), BeautifulLuXianFragment.class);
+                it_jingpingluxia.setClass(getActivity(), BeautifulLuXianActivity.class);
                 startActivity(it_jingpingluxia);
             }
         });//精品路线
@@ -339,9 +337,9 @@ public class IndexFragment extends Fragment {
         rb_xunyang_food.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "浔阳美食", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "浔阳美食", Toast.LENGTH_LONG).show();
                 Intent it_xunyang_food = new Intent();
-                it_xunyang_food.setClass(getActivity(), GoodFoodFragment.class);
+                it_xunyang_food.setClass(getActivity(), GoodFoodActivity.class);
                 startActivity(it_xunyang_food);
             }
         });//浔阳美食
@@ -349,19 +347,20 @@ public class IndexFragment extends Fragment {
         rb_hotel_order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "酒店预订", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "酒店预订", Toast.LENGTH_LONG).show();
                 Intent it_hotel_order = new Intent();
-                it_hotel_order.setClass(getActivity(), HotelOrderFragment.class);
+                it_hotel_order.setClass(getActivity(), HotelActivity.class);
                 startActivity(it_hotel_order);
+
             }
         });//酒店预订
         RadioButton rb_play_xunyang = (RadioButton) getActivity().findViewById(R.id.play_xunyang);
         rb_play_xunyang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "共游浔阳", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "共游浔阳", Toast.LENGTH_LONG).show();
                 Intent it_play_xunyang = new Intent();
-                it_play_xunyang.setClass(getActivity(), PlayXuYangFragment.class);
+                it_play_xunyang.setClass(getActivity(), PlayXuYangActivity.class);
                 startActivity(it_play_xunyang);
             }
         });//共游浔阳

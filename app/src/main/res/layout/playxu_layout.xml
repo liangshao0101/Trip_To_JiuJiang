@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="#0000"
+                android:paddingLeft="8dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/back_arrow_image"
+                ></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:paddingTop="3dp"
+                android:text="共游浔阳"
+                ></TextView>
+        </LinearLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/ico1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/touxiang1"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name1"
+        android:layout_toRightOf="@+id/ico1"
+        android:text="码帝"
+        android:textColor="#576B95"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/content1"
+        android:layout_below="@+id/name1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/ico1"
+        android:minLines="3"
+        android:text="雅丹维吾尔语是陡壁的小山丘，为啥叫魔鬼城，这里有个传说，就是人类执迷不悟，天神一怒之下将这片多变成废墟，这里所有的人都被掩埋，所以一到晚上便能听到灵魂的忏悔嚎哭声，像魔鬼👹 这种陡壁小山丘，其实是在干旱大风环境下，形成的一种被风蚀的地貌。"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content1"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/ico1"
+        android:text="昨天"
+        android:textColor="#9A9A9A"></TextView>
+
+    <ImageView
+        android:id="@+id/comment1"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/content1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="1dp"
+        android:src="@drawable/comment"></ImageView>
+</RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/line1"></ImageView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/ico2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/touxiang2"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name2"
+            android:layout_toRightOf="@+id/ico2"
+            android:text="我不合群"
+            android:textColor="#576B95"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/content2"
+            android:layout_below="@+id/name2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ico2"
+            android:minLines="3"
+            android:text="身临其境才真体会到“不识庐山真面目，只缘身在此山中”，去的时候雨过天晴，云海很壮观，自驾和坐景区的车都很方便，山下镇子很干净餐饮住宿都很方便价格还很亲民，回去计划让今年公司年会来庐山开，带队来玩。"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content2"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/ico2"
+            android:text="昨天"
+            android:textColor="#9A9A9A"></TextView>
+
+        <ImageView
+            android:id="@+id/comment2"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/content2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/comment"></ImageView>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/line1"></ImageView>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/ico3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/touxiang3"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name3"
+            android:layout_toRightOf="@+id/ico3"
+            android:text="只为你停留"
+            android:textColor="#576B95"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/content3"
+            android:layout_below="@+id/name3"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ico3"
+            android:minLines="3"
+            android:text="千万不要在11月去庐山，既错过了10月的枫叶，也等不到12月的初雪，只有一片片的大雾。70块钱的观光车完全不值，比较远的景点只有五老峰和三叠泉那条线，最坑的是竟然不在东门设停靠点。看完三叠泉之后只能折返爬上楼梯回去缆车点，又要给多80块钱的缆车钱，不然回不到牯岭。建议最好在山上第二天的行程，选在东门附近的宾馆，从东门上去看三叠泉，再原路返回。五老峰就没什么好看的了，爬山爱好者聚集地。"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content3"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/ico3"
+            android:text="昨天"
+            android:textColor="#9A9A9A"></TextView>
+
+        <ImageView
+            android:id="@+id/comment3"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/content3"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/comment"></ImageView>
+    </RelativeLayout>
+
+
+</LinearLayout>

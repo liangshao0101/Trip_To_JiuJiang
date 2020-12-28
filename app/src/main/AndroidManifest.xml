@@ -3,29 +3,29 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="com.example.trip_to_jiujiang">
     <!--允许联网 -->
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <!--获取wifi网络状态的信息 -->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <!--获取sd卡写的权限，用于文件上传和下载-->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <!--允许读取手机状态 用于创建BmobInstallation-->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <!--    <添加权限高德地图>-->
     <!--允许程序打开网络套接字-->
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <!--允许程序设置内置sd卡的写权限-->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <!--允许程序获取网络状态-->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <!--允许程序访问WiFi网络信息-->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <!--允许程序读写手机状态和身份-->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <!--用于进行网络定位-->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
     <!--用于访问GPS定位-->
@@ -35,7 +35,8 @@
     <!--用于读取手机当前的状态-->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
     <!--用于申请调用A-GPS模块-->
-    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission><application
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+    <application
             android:largeHeap="true"
             android:hardwareAccelerated="false"
             android:allowBackup="true"
@@ -70,18 +71,34 @@
         <activity android:name=".Activity.MyParkingActivity"></activity>
         <activity android:name=".Activity.ChangePasswordActivity"></activity>
         <activity android:name=".Activity.InterestXunYangActivity"></activity>
-    <activity android:name=".Activity.TaoYuanMingActivity"></activity>
-    <activity android:name=".Activity.XunYangLouActivity"></activity>
-    <activity android:name=".Activity.TimeMoneyActivity"></activity>
-    <activity android:name=".Activity.HuXiXiaoTanActivity"></activity>
-    <activity android:name=".Activity.DongLinSiActivity"></activity>
-    <activity android:name=".Activity.XunYangGongLieActivity"></activity>
-    <activity android:name=".Activity.GongLieLuShanActivity"></activity>
-    <activity android:name=".Activity.GongLieBaiMuDaActivity"></activity>
-    <activity android:name=".Activity.GongLieDongLinSiActivity"></activity>
-    <activity android:name=".Activity.GongLieShiZhongShanActivity"></activity>
-    <activity android:name=".Activity.GongLieXunYangLouActivity"></activity>
-    <!--服务必须有！否则定位时候报错误，错误代码10-->
-    <service android:name="com.amap.api.location.APSService"></service>
+        <activity android:name=".Activity.TaoYuanMingActivity"></activity>
+        <activity android:name=".Activity.XunYangLouActivity"></activity>
+        <activity android:name=".Activity.TimeMoneyActivity"></activity>
+        <activity android:name=".Activity.HuXiXiaoTanActivity"></activity>
+        <activity android:name=".Activity.DongLinSiActivity"></activity>
+        <activity android:name=".Activity.XunYangGongLieActivity"></activity>
+        <activity android:name=".Activity.GongLieLuShanActivity"></activity>
+        <activity android:name=".Activity.GongLieBaiMuDaActivity"></activity>
+        <activity android:name=".Activity.GongLieDongLinSiActivity"></activity>
+        <activity android:name=".Activity.GongLieShiZhongShanActivity"></activity>
+        <activity android:name=".Activity.GongLieXunYangLouActivity"></activity>
+
+        <!--zyg-->
+        <activity android:name=".Activity.TransportActivity"></activity>
+        <activity android:name=".Activity.TicketsOrderActivity"></activity>
+        <activity android:name=".Activity.BeautifulLuXianActivity"></activity>
+        <activity android:name=".Activity.BeautifulBinnerActivity"/>
+        <activity android:name=".Activity.TicketsItemListen"/>
+
+        <!--lmj-->
+        <activity android:name=".Activity.GoodFoodActivity"></activity>
+        <activity android:name=".Activity.HotelActivity"></activity>
+        <activity android:name=".Activity.HotelActivity1"></activity>
+        <activity android:name=".Activity.HotelActivity2"></activity>
+        <activity android:name=".Activity.HotelActivity3"></activity>
+        <activity android:name=".Activity.PlayXuYangActivity"></activity>
+
+        <!--服务必须有！否则定位时候报错误，错误代码10-->
+        <service android:name="com.amap.api.location.APSService"></service>
     </application>
 </manifest>

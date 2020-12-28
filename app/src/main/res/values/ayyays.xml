@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ctype">
+        <item>全部酒店</item>
+        <item>酒店</item>
+        <item>民宿</item>
+        <item>渔家乐</item>
+
+    </string-array>
+
+    <string-array name="load">
+
+        <item>离我最近</item>
+
+        <item>综合排序</item>
+
+
+    </string-array>
+
+    <string-array name="price">
+        <item>价格全部</item>
+        <item>￥0-100</item>
+        <item>￥100-300</item>
+        <item>￥300以上</item>
+
+    </string-array>
+</resources>
